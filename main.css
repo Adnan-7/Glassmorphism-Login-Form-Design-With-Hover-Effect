@@ -1,1 +1,69 @@
- 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all 0.2s linear;
+}
+
+.form-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(bgImg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.form-container form {
+  height: 450px;
+  width: 350px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  box-shadow: 0 5px 115px rgba(0, 0, 0, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.form-container form h3 {
+  font-size: 30px;
+  color: #ccc;
+  padding: 30px 0;
+  letter-spacing: 3px;
+}
+
+.form-container form i {
+  padding: 0 5px;
+  color: #bbb;
+  font-size: 20px;
+}
+
+.form-container form input {
+  outline: none;
+  border: none;
+  height: 40px;
+  width: 82%;
+  padding: 0 10px;
+  margin: 15px 0;
+  font-size: 17px;
+  letter-spacing: 1px;
+  background: rgba(0, 0, 0, 0.1);
+  color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) inset;
+}
+
+.form-container form input[type='submit'] {
+  width: 90%;
+  cursor: pointer;
+  background: linear-gradient(90deg, #4d0f75, #77419b);
+  margin-top: 30px;
+  border-radius: 50px;
+}
+
+.form-container form input[type='submit']:hover {
+  letter-spacing: 4px;
+}
